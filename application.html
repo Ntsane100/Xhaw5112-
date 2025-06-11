@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css_styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <body>
+
+      <div class="container">
+        <h2>Application Form</h2>
+        <form id="appForm">
+          <label for="name">First Name</label>
+          <input type="text" id="name" required />
+    
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" required />
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+    
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required />
+    
+          <label for="id">ID Number</label>
+          <input type="text" id="id" required />
+    
+          <button type="submit">Confirm Details</button>
+        </form>
+      </div>
+    
+      <script>
+        document.getElementById('appForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          window.location.href = 'courses.html';
+        });
+      </script>
+
+
+    </body>
+
+
+
+
+  
+    
+  
+   
+  
+   
+
+</html>
